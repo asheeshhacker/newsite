@@ -10,16 +10,13 @@
       
     ],
     "routes": [
-        {
-            "src": "/",
-            "dest": "djangoprojectname/wsgi.py"
-        },
+      
       {
         "src": "/static/(.*)",
         "dest": "/static/$1"
       },
       {
-        "src": "/(.*)",
+        "src": "/",
         "dest": "mysite1/wsgi.py"
       }
     ]
