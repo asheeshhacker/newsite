@@ -1,0 +1,26 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{tittle}}</title>
+    {% tailwind_css %}
+    {% load static %} 
+    
+    
+</head>
+
+
+<body class="bg-gradient-to-t from-[#515d7b] to-[#000000] overflow-x-hidden bg-no-repeat  scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-white scrollbar-corner-white mx-auto " >
+    <div class="pt-10 pr-24 " >
+    <nav class=" fixed -right-0 z-50">
+        <ul class="text-white relative font-thin  drop-shadow-[5px_5px_10px_rgba(255,255,255)]">
+            <il><a href="/" class="px-9 text-lg hover:brightness-200 text-opacity-70 hover:text-2xl hover:font-bold duration-500 hover:text-green-600 ">HOME</a></il>
+            <il><a href="/post/" class="px-7 text-lg hover:brightness-200 text-opacity-70 hover:text-2xl duration-500 hover:font-bold hover:text-green-600">POST</a></il>
+            <il><a href="/chat/"  class="px-7 text-lg hover:brightness-200 text-opacity-70 hover:text-2xl duration-500 hover:font-bold hover:text-green-600" >CHAT</a></il>
+            <il><a href="/contact/"  class="px-6 text-lg hover:brightness-200 text-opacity-70 hover:text-2xl duration-500 hover:font-bold hover:text-green-600">CONTACT</a></il>
+            
+        </ul>
+    </nav>
+    </div>

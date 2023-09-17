@@ -1,0 +1,34 @@
+{% load static tailwind_tags %}
+{% include 'header.html' %}
+{% tailwind_css %}
+    <div class="">
+        <h1 class="py-16 text-white text-center text-5xl ">CONTACT US</h1>
+    <div class="grid grid-cols-2">
+        <div>
+            
+            <form method="post" action="{% url "contactform" %}"> 
+                {% csrf_token %}  
+             <input type="text" name="name" value="your name" class="form-input rounded-full flex mx-auto  bg-gray-400 italic w-[70%] ">
+             <input type="text" name="mail" value="email" class="form-input rounded-full flex mx-auto my-8   bg-gray-400 italic w-[70%]">
+             <textarea type="text" name="cmt" value="comment" class="form-textarea w-[70%] h-56  relative rounded-xl flex mx-auto bg-gray-400 italic mb-5 ">comment</textarea>
+             <button type="submit"  class="bg-blue-700  hover:bg-blue-600 transition hover:-translate-y-1 duration-500 flex mx-auto px-8 rounded-xl py-3 mb-56">send</button>
+            </form>
+        </div>
+        <div>
+             <h1 class="font-mono flex mx-auto text-5xl text-white  mb-56">Lets talk about everything!</h1>
+             
+             <div class="grid grid-cols-3  ">
+                <p class="text-white font-mono font-bold">contact me :</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 relative right-[9rem]">
+                    <path d="M19.5 22.5a3 3 0 003-3v-8.174l-6.879 4.022 3.485 1.876a.75.75 0 01-.712 1.321l-5.683-3.06a1.5 1.5 0 00-1.422 0l-5.683 3.06a.75.75 0 01-.712-1.32l3.485-1.877L1.5 11.326V19.5a3 3 0 003 3h15z" />
+                    <path d="M1.5 9.589v-.745a3 3 0 011.578-2.641l7.5-4.039a3 3 0 012.844 0l7.5 4.039A3 3 0 0122.5 8.844v.745l-8.426 4.926-.652-.35a3 3 0 00-2.844 0l-.652.35L1.5 9.59z" /></svg>
+                <a href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox?compose=GTvVlcSHwQkFLSTFTMntnxfVlLTjMkgrNjCWJrWftKGcQLNsVCZfXLqkRVMdPpVmqbtmstwhVmVKg" class="italic font-mono  text-white  relative right-[23rem]  hover:text-green-300  ">asheeshanuroop@gmail.com</a>
+            </div>
+              
+             
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
